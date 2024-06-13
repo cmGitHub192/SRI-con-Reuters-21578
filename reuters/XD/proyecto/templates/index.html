@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"   href="../static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Busqueda</title>
+</head>
+<body>
+    <div id="Titulo">
+        <h1>SRI basado en Reuters-21578</h1>
+        <img src="../static/libro.png" alt="libro">
+    </div>
+    
+    <form id="search-form">
+        <input type="text" id="query" placeholder="Ingrese su consulta">
+        <button type="submit">Buscar</button>
+    </form>
+    <div id="results"></div>
+    
+
+    <script>
+     document.getElementById('search-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Evitar que el formulario se envíe normalmente
+
+    var query = document.getElementById('query').value;
+    var tv = "1";  // Debes especificar si quieres usar TF-IDF (1) o Bag of Words (0)
+    var tr = "1";  // Debes especificar si quieres usar ranking (1) o no (0)
+
+    // Debes proporcionar las rutas correctas a los archivos de índice invertido, corpus y stopwords
+    var invertedIndexFilepath = "index_tf_idf.txt";
+    var corpusDir = "../Proyecto_BIM_I/reuters/training";
+    var stopwordsFilepath = "../Proyecto_BIM_I/reuters/stopwords.txt";
+
+    // Realizar la solicitud POST al servidor Flask
+    fetch('/process', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            query: query,
+            tv: tv,
+            tr: tr,
+            inverted_index_filepath: invertedIndexFilepath,
+            corpus_dir: corpusDir,
+            stopwords_filepath: stopwordsFilepath
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        // Mostrar los resultados en el div de resultados
+        var resultsDiv = document.getElementById('results');
+        resultsDiv.innerHTML = ''; // Limpiar resultados anteriores
+
+        if (data.error) {
+            resultsDiv.innerText = 'Error: ' + data.error;
+        } else {
+            var resultList = document.createElement('ul');
+            data.result.forEach(function(item) {
+                var listItem = document.createElement('li');
+                listItem.textContent = item;
+                resultList.appendChild(listItem);
+            });
+            resultsDiv.appendChild(resultList);
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+});
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Motor de Búsqueda</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/style.css">
+
+</head>
+<body>
+    <div class="container">
+        <div id="logo">
+            <img src="../static/logo-removebg-preview.png" alt="logo" width="350">
+        </div>
+        <form id="search-form">
+            <div class="input-group mb-3">
+                <input type="text" id="query" name="query" class="form-control" placeholder="Ingrese su consulta" aria-label="Consulta" aria-describedby="button-search" required>
+                <select id="model" class="form-control">
+                    <option value="0">TF-IDF con Coseno</option>
+                    <option value="1">BoW con Jaccard</option>
+                </select>
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="submit" id="button-search">Buscar</button>
+                </div>
+            </div>
+        </form>
+
+        <div id="loading" style="display: none;">
+            <div class="spinner-border text-primary" role="status">
+                <span class="sr-only">Cargando...</span>
+            </div>
+        </div>
+
+        <div id="results"></div>
+        <div id="result-message" class="mt-2"></div>
+    </div>
+
+    <footer id="footer" class="text-center mt-4">
+        Desarrollado por Cristina Molina - Jair Sánchez
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        document.getElementById('search-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var query = document.getElementById('query').value.trim();
+            var model = document.getElementById('model').value;
+
+            if (query === "") return;
+
+            showLoading();
+            fetch('/process', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ query: query, model: model })
+            })
+            .then(response => response.json())
+            .then(data => {
+                hideLoading();
+                var resultsDiv = document.getElementById('results');
+                var messageDiv = document.getElementById('result-message');
+                resultsDiv.innerHTML = '';
+                messageDiv.innerHTML = '';
+                if (data.error) {
+                    resultsDiv.innerHTML = '<div class="alert alert-danger" role="alert">Error: ' + data.error + '</div>';
+                } else {
+                    var resultList = document.createElement('div');
+                    resultList.classList.add('list-group');
+                    data.result.slice(0, 20).forEach(function(item) {
+                        var resultItem = document.createElement('div');
+                        resultItem.classList.add('result-item', 'list-group-item');
+                        resultItem.textContent = item;
+                        resultItem.addEventListener('click', function() {
+                            window.open('static/training/' + item, '_blank');
+                        });
+                        resultList.appendChild(resultItem);
+                    });
+                    resultsDiv.appendChild(resultList);
+                    messageDiv.innerHTML = '<p class="text-muted">Se mostrarán los 20 mejores resultados.</p>';
+                }
+            })
+            .catch(error => {
+                hideLoading();
+                console.error('Error:', error);
+            });
+        });
+
+        function showLoading() {
+            document.getElementById('loading').style.display = 'block';
+        }
+
+        function hideLoading() {
+            document.getElementById('loading').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

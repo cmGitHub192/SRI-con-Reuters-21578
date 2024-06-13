@@ -1,0 +1,56 @@
+body {
+    background-color: #f8f9fa;
+    padding-top: 20px;
+    font-family: Arial, sans-serif;
+}
+.container {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+#search-form {
+    margin-bottom: 20px;
+}
+#results {
+    margin-top: 20px;
+}
+#footer {
+    margin-top: 50px;
+    color: #6c757d;
+    font-size: 14px;
+}
+#logo {
+    margin-bottom: 20px;
+}
+#loading {
+    margin-top: 20px;
+}
+.form-control {
+    font-size: 16px;
+}
+#results .result-item {
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+}
+.btn-primary {
+    font-size: 16px;
+    padding: 5px 10px;
+}
+.text-muted {
+    font-size: 14px;
+}
+
+#model{
+    background-color: rgb(165, 210, 245);
+}
+
+.btn-primary:hover {
+    background-color: #0b1de6; 
+    border-color: #0b1de6; 
+}
+
+.list-group-item:hover {
+    background-color: #72abe7; 
+    cursor: pointer; 
+}

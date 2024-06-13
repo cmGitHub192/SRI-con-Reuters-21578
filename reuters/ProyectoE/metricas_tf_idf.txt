@@ -1,0 +1,450 @@
+====================================================================
+Resultados para:  cocoa
+Cantidad de predicciones:  59
+Recall:  89.83050847457628
+Precision:  96.36363636363636
+====================================================================
+Resultados para:  sorghum
+Cantidad de predicciones:  27
+Recall:  81.48148148148148
+Precision:  91.66666666666666
+====================================================================
+Resultados para:  oat
+Cantidad de predicciones:  14
+Recall:  50.0
+Precision:  87.5
+====================================================================
+Resultados para:  barley
+Cantidad de predicciones:  52
+Recall:  71.15384615384616
+Precision:  100.0
+====================================================================
+Resultados para:  corn
+Cantidad de predicciones:  169
+Recall:  78.10650887573965
+Precision:  72.92817679558011
+====================================================================
+Resultados para:  wheat
+Cantidad de predicciones:  241
+Recall:  84.23236514522821
+Precision:  95.75471698113208
+====================================================================
+Resultados para:  grain
+Cantidad de predicciones:  235
+Recall:  84.68085106382979
+Precision:  45.95842956120092
+====================================================================
+Resultados para:  sunseed
+Cantidad de predicciones:  0
+Recall:  0.0
+Precision:  0.0
+====================================================================
+Resultados para:  oilseed
+Cantidad de predicciones:  36
+Recall:  72.22222222222221
+Precision:  20.967741935483872
+====================================================================
+Resultados para:  soybean
+Cantidad de predicciones:  115
+Recall:  65.21739130434783
+Precision:  96.15384615384616
+====================================================================
+Resultados para:  sun-oil
+Cantidad de predicciones:  1
+Recall:  100.0
+Precision:  20.0
+====================================================================
+Resultados para:  soy-oil
+Cantidad de predicciones:  7
+Recall:  42.857142857142854
+Precision:  21.428571428571427
+====================================================================
+Resultados para:  lin-oil
+Cantidad de predicciones:  1
+Recall:  100.0
+Precision:  100.0
+====================================================================
+Resultados para:  veg-oil
+Cantidad de predicciones:  0
+Recall:  0.0
+Precision:  0.0
+====================================================================
+Resultados para:  earn
+Cantidad de predicciones:  529
+Recall:  72.5897920604915
+Precision:  13.347236704900938
+====================================================================
+Resultados para:  acq
+Cantidad de predicciones:  0
+Recall:  0.0
+Precision:  0.0
+====================================================================
+Resultados para:  copper
+Cantidad de predicciones:  57
+Recall:  80.7017543859649
+Precision:  97.87234042553192
+====================================================================
+Resultados para:  housing
+Cantidad de predicciones:  318
+Recall:  3.7735849056603774
+Precision:  75.0
+====================================================================
+Resultados para:  money-supply
+Cantidad de predicciones:  0
+Recall:  0.0
+Precision:  0.0
+====================================================================
+Resultados para:  coffee
+Cantidad de predicciones:  127
+Recall:  87.4015748031496
+Precision:  100.0
+====================================================================
+Resultados para:  ship
+Cantidad de predicciones:  228
+Recall:  57.01754385964912
+Precision:  65.98984771573603
+====================================================================
+Resultados para:  sugar
+Cantidad de predicciones:  148
+Recall:  80.4054054054054
+Precision:  94.44444444444444
+====================================================================
+Resultados para:  trade
+Cantidad de predicciones:  1117
+Recall:  30.70725156669651
+Precision:  93.20652173913044
+====================================================================
+Resultados para:  reserves
+Cantidad de predicciones:  478
+Recall:  11.297071129707113
+Precision:  98.18181818181819
+====================================================================
+Resultados para:  soy-meal
+Cantidad de predicciones:  8
+Recall:  100.0
+Precision:  61.53846153846154
+====================================================================
+Resultados para:  meal-feed
+Cantidad de predicciones:  0
+Recall:  0.0
+Precision:  0.0
+====================================================================
+Resultados para:  rye
+Cantidad de predicciones:  2
+Recall:  50.0
+Precision:  100.0
+====================================================================
+Resultados para:  cotton
+Cantidad de predicciones:  54
+Recall:  72.22222222222221
+Precision:  100.0
+====================================================================
+Resultados para:  livestock
+Cantidad de predicciones:  32
+Recall:  46.875
+Precision:  20.0
+====================================================================
+Resultados para:  carcass
+Cantidad de predicciones:  3
+Recall:  100.0
+Precision:  6.0
+====================================================================
+Resultados para:  crude
+Cantidad de predicciones:  237
+Recall:  75.52742616033755
+Precision:  46.01542416452442
+====================================================================
+Resultados para:  nat-gas
+Cantidad de predicciones:  0
+Recall:  0.0
+Precision:  0.0
+====================================================================
+Resultados para:  gnp
+Cantidad de predicciones:  46
+Recall:  78.26086956521739
+Precision:  35.64356435643564
+====================================================================
+Resultados para:  cpi
+Cantidad de predicciones:  5
+Recall:  40.0
+Precision:  2.898550724637681
+====================================================================
+Resultados para:  interest
+Cantidad de predicciones:  755
+Recall:  16.026490066225165
+Precision:  34.87031700288185
+====================================================================
+Resultados para:  money-fx
+Cantidad de predicciones:  0
+Recall:  0.0
+Precision:  0.0
+====================================================================
+Resultados para:  bop
+Cantidad de predicciones:  0
+Recall:  0.0
+Precision:  0.0
+====================================================================
+Resultados para:  rice
+Cantidad de predicciones:  48
+Recall:  70.83333333333334
+Precision:  97.14285714285714
+====================================================================
+Resultados para:  tea
+Cantidad de predicciones:  21
+Recall:  42.857142857142854
+Precision:  100.0
+====================================================================
+Resultados para:  palmkernel
+Cantidad de predicciones:  1
+Recall:  0.0
+Precision:  0.0
+====================================================================
+Resultados para:  palm-oil
+Cantidad de predicciones:  0
+Recall:  0.0
+Precision:  0.0
+====================================================================
+Resultados para:  copra-cake
+Cantidad de predicciones:  0
+Recall:  0.0
+Precision:  0.0
+====================================================================
+Resultados para:  rubber
+Cantidad de predicciones:  53
+Recall:  67.9245283018868
+Precision:  97.2972972972973
+====================================================================
+Resultados para:  alum
+Cantidad de predicciones:  0
+Recall:  0.0
+Precision:  0.0
+====================================================================
+Resultados para:  strategic-metal
+Cantidad de predicciones:  0
+Recall:  0.0
+Precision:  0.0
+====================================================================
+Resultados para:  platinum
+Cantidad de predicciones:  11
+Recall:  45.45454545454545
+Precision:  100.0
+====================================================================
+Resultados para:  gold
+Cantidad de predicciones:  171
+Recall:  54.97076023391813
+Precision:  100.0
+====================================================================
+Resultados para:  tin
+Cantidad de predicciones:  28
+Recall:  64.28571428571429
+Precision:  100.0
+====================================================================
+Resultados para:  groundnut-oil
+Cantidad de predicciones:  0
+Recall:  0.0
+Precision:  0.0
+====================================================================
+Resultados para:  rapeseed
+Cantidad de predicciones:  22
+Recall:  72.72727272727273
+Precision:  88.88888888888889
+====================================================================
+Resultados para:  rape-oil
+Cantidad de predicciones:  0
+Recall:  0.0
+Precision:  0.0
+====================================================================
+Resultados para:  dlr
+Cantidad de predicciones:  3134
+Recall:  1.7549457562220805
+Precision:  41.98473282442748
+====================================================================
+Resultados para:  l-cattle
+Cantidad de predicciones:  0
+Recall:  0.0
+Precision:  0.0
+====================================================================
+Resultados para:  retail
+Cantidad de predicciones:  112
+Recall:  15.178571428571427
+Precision:  73.91304347826086
+====================================================================
+Resultados para:  ipi
+Cantidad de predicciones:  0
+Recall:  0.0
+Precision:  0.0
+====================================================================
+Resultados para:  silver
+Cantidad de predicciones:  48
+Recall:  41.66666666666667
+Precision:  95.23809523809523
+====================================================================
+Resultados para:  iron-steel
+Cantidad de predicciones:  0
+Recall:  0.0
+Precision:  0.0
+====================================================================
+Resultados para:  hog
+Cantidad de predicciones:  19
+Recall:  63.1578947368421
+Precision:  75.0
+====================================================================
+Resultados para:  gas
+Cantidad de predicciones:  283
+Recall:  2.8268551236749118
+Precision:  21.62162162162162
+====================================================================
+Resultados para:  heat
+Cantidad de predicciones:  41
+Recall:  24.390243902439025
+Precision:  71.42857142857143
+====================================================================
+Resultados para:  propane
+Cantidad de predicciones:  5
+Recall:  40.0
+Precision:  66.66666666666666
+====================================================================
+Resultados para:  jobs
+Cantidad de predicciones:  71
+Recall:  16.901408450704224
+Precision:  26.08695652173913
+====================================================================
+Resultados para:  lei
+Cantidad de predicciones:  0
+Recall:  0.0
+Precision:  0.0
+====================================================================
+Resultados para:  yen
+Cantidad de predicciones:  225
+Recall:  19.555555555555557
+Precision:  97.77777777777777
+====================================================================
+Resultados para:  zinc
+Cantidad de predicciones:  27
+Recall:  77.77777777777779
+Precision:  100.0
+====================================================================
+Resultados para:  orange
+Cantidad de predicciones:  21
+Recall:  76.19047619047619
+Precision:  100.0
+====================================================================
+Resultados para:  pet-chem
+Cantidad de predicciones:  0
+Recall:  0.0
+Precision:  0.0
+====================================================================
+Resultados para:  fuel
+Cantidad de predicciones:  84
+Recall:  15.476190476190476
+Precision:  100.0
+====================================================================
+Resultados para:  wpi
+Cantidad de predicciones:  0
+Recall:  0.0
+Precision:  0.0
+====================================================================
+Resultados para:  potato
+Cantidad de predicciones:  8
+Recall:  37.5
+Precision:  100.0
+====================================================================
+Resultados para:  lead
+Cantidad de predicciones:  278
+Recall:  5.0359712230215825
+Precision:  93.33333333333333
+====================================================================
+Resultados para:  groundnut
+Cantidad de predicciones:  4
+Recall:  0.0
+Precision:  0.0
+====================================================================
+Resultados para:  income
+Cantidad de predicciones:  316
+Recall:  1.2658227848101267
+Precision:  44.44444444444444
+====================================================================
+Resultados para:  nickel
+Cantidad de predicciones:  11
+Recall:  63.63636363636363
+Precision:  87.5
+====================================================================
+Resultados para:  palladium
+Cantidad de predicciones:  4
+Recall:  50.0
+Precision:  100.0
+====================================================================
+Resultados para:  lumber
+Cantidad de predicciones:  18
+Recall:  33.33333333333333
+Precision:  60.0
+====================================================================
+Resultados para:  jet
+Cantidad de predicciones:  7
+Recall:  42.857142857142854
+Precision:  75.0
+====================================================================
+Resultados para:  instal-debt
+Cantidad de predicciones:  0
+Recall:  0.0
+Precision:  0.0
+====================================================================
+Resultados para:  dfl
+Cantidad de predicciones:  0
+Recall:  0.0
+Precision:  0.0
+====================================================================
+Resultados para:  dmk
+Cantidad de predicciones:  0
+Recall:  0.0
+Precision:  0.0
+====================================================================
+Resultados para:  coconut-oil
+Cantidad de predicciones:  0
+Recall:  0.0
+Precision:  0.0
+====================================================================
+Resultados para:  cpu
+Cantidad de predicciones:  0
+Recall:  0.0
+Precision:  0.0
+====================================================================
+Resultados para:  cotton-oil
+Cantidad de predicciones:  0
+Recall:  0.0
+Precision:  0.0
+====================================================================
+Resultados para:  naphtha
+Cantidad de predicciones:  5
+Recall:  40.0
+Precision:  100.0
+====================================================================
+Resultados para:  nzdlr
+Cantidad de predicciones:  0
+Recall:  0.0
+Precision:  0.0
+====================================================================
+Resultados para:  rand
+Cantidad de predicciones:  22
+Recall:  9.090909090909092
+Precision:  100.0
+====================================================================
+Resultados para:  coconut
+Cantidad de predicciones:  15
+Recall:  26.666666666666668
+Precision:  100.0
+====================================================================
+Resultados para:  castor-oil
+Cantidad de predicciones:  0
+Recall:  0.0
+Precision:  0.0
+====================================================================
+Resultados para:  nkr
+Cantidad de predicciones:  0
+Recall:  0.0
+Precision:  0.0
+====================================================================
+Resultados para:  sun-meal
+Cantidad de predicciones:  2
+Recall:  0.0
+Precision:  0.0
