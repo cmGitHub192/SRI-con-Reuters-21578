@@ -1,68 +1,64 @@
-# Sistema de Recuperación de Información basado en Reuters-21578
+# Information Retrieval System based on Reuters-21578
 
-Integrantes: Cristina Molina, Jair Sanchez
+## Project Description
 
-## Descripción del Proyecto
+This project focuses on developing an Information Retrieval System (IRS) using the Reuters-21578 corpus, a dataset widely used in information retrieval research. The main goal is to implement a system that allows efficient and accurate searches within the corpus, using modern text processing techniques and search algorithms.
 
-Este proyecto se centra en el desarrollo de un Sistema de Recuperación de Información (SRI) utilizando el corpus Reuters-21578, un conjunto de datos ampliamente utilizado en la investigación de recuperación de información. El objetivo principal es implementar un sistema que permita realizar búsquedas eficientes y precisas dentro del corpus, utilizando técnicas modernas de procesamiento de texto y algoritmos de búsqueda.
+## Context and Motivation
 
-### Contexto y Motivación
+Information retrieval is a key area in data science and artificial intelligence, enabling the extraction of relevant information from large volumes of unstructured data. The Reuters-21578 corpus contains thousands of news articles, making it ideal for experimenting with and evaluating various text processing and search techniques.
 
-La recuperación de información es un área fundamental en la ciencia de datos y la inteligencia artificial, ya que permite extraer información relevante de grandes volúmenes de datos no estructurados. El corpus Reuters-21578 contiene miles de artículos de noticias, lo que lo hace ideal para experimentar y evaluar diferentes técnicas de procesamiento y búsqueda de información.
+## Specific Objectives
 
-### Objetivos Específicos
+1. **Data Acquisition and Preparation**: Download, decompress, and organize the Reuters-21578 corpus files.
+2. **Data Preprocessing**: Clean the data, remove unwanted characters, tokenize the text, and apply stemming and lemmatization.
+3. **Text Vectorization**: Convert texts into numerical vectors using techniques like Bag of Words (BoW) and TF-IDF.
+4. **Indexing**: Build an inverted index to enable fast and efficient searches.
+5. **Search Engine Implementation**: Develop logic to process queries and rank results using similarity algorithms such as cosine similarity and Jaccard.
+6. **System Evaluation**: Measure system effectiveness using metrics like precision, recall, and F1-score.
+7. **User Interface**: Create an intuitive web interface to allow users to interact with the system and perform searches.
 
-1. **Adquisición y Preparación de Datos**: Descargar, descomprimir y organizar los archivos del corpus Reuters-21578.
-2. **Preprocesamiento de Datos**: Limpiar los datos, eliminar caracteres no deseados, tokenizar el texto, y aplicar técnicas de stemming y lematización.
-3. **Vectorización de Textos**: Convertir los textos en vectores numéricos utilizando técnicas como Bag of Words (BoW) y TF-IDF.
-4. **Indexación**: Construir un índice invertido que permita realizar búsquedas rápidas y eficientes.
-5. **Implementación del Motor de Búsqueda**: Desarrollar la lógica para procesar consultas y rankear los resultados utilizando algoritmos de similitud como el coseno y Jaccard.
-6. **Evaluación del Sistema**: Medir la efectividad del sistema mediante métricas como precisión, recall y F1-score.
-7. **Interfaz de Usuario**: Crear una interfaz web intuitiva para que los usuarios puedan interactuar con el sistema y realizar búsquedas.
+## Technologies Used
 
-### Tecnologías Utilizadas
+- **Python**: For data preprocessing and search engine development.
+- **JavaScript**: For implementing the web interface.
+- **Python Libraries**: Numpy, Pandas, Scikit-learn, among others.
 
-- **Python**: Para el preprocesamiento de datos y el desarrollo del motor de búsqueda.
-- **JavaScript**: Para la implementación de la interfaz web.
-- **Librerías de Python**: Numpy, Pandas, Scikit-learn, entre otras.
+## Project Structure
 
-### Estructura del Proyecto
+1. **Data Acquisition**:
+   - Download the Reuters-21578 corpus.
+   - Decompress and organize the files.
 
-El proyecto está organizado en varias fases, cada una con tareas específicas:
+2. **Preprocessing**:
+   - Extract relevant content from the documents.
+   - Clean and normalize the text.
+   - Tokenize, remove stop words, and apply stemming or lemmatization.
 
-1. **Adquisición de Datos**:
-   - Descargar el corpus Reuters-21578.
-   - Descomprimir y organizar los archivos.
+3. **Vector Representation**:
+   - Vectorize the texts using techniques like BoW and TF-IDF.
+   - Evaluate the vectorization techniques.
 
-2. **Preprocesamiento**:
-   - Extracción del contenido relevante de los documentos.
-   - Limpieza de datos y normalización de texto.
-   - Tokenización, eliminación de stop words y aplicación de stemming o lematización.
+4. **Indexing**:
+   - Build an inverted index to map terms to documents.
+   - Optimize data structures for the index.
 
-3. **Representación de Datos en Espacio Vectorial**:
-   - Vectorización de los textos utilizando técnicas como BoW y TF-IDF.
-   - Evaluación de las técnicas de vectorización.
+5. **Search Engine Design**:
+   - Develop logic to process user queries.
+   - Implement similarity and ranking algorithms.
 
-4. **Indexación**:
-   - Construcción de un índice invertido para mapear términos a documentos.
-   - Optimización de estructuras de datos para el índice.
+6. **System Evaluation**:
+   - Define evaluation metrics.
+   - Test with the corpus’ test set and analyze results.
 
-5. **Diseño del Motor de Búsqueda**:
-   - Desarrollo de la lógica para procesar consultas de usuarios.
-   - Implementación de algoritmos de similitud y de ranking.
+7. **Web User Interface**:
+   - Design and develop a web interface for users to perform searches.
+   - Implement features like filters and display options.
 
-6. **Evaluación del Sistema**:
-   - Definición de métricas de evaluación.
-   - Pruebas con el conjunto de prueba del corpus y análisis de resultados.
+## Expected Results
 
-7. **Interfaz Web de Usuario**:
-   - Diseño y desarrollo de una interfaz web donde los usuarios puedan realizar búsquedas.
-   - Implementación de características adicionales como filtros y opciones de visualización.
+By the end of the project, a functional IRS is expected that will allow efficient searches in the Reuters-21578 corpus. The system’s evaluation should demonstrate high precision and recall, indicating the effectiveness of the IRS.
 
-### Resultados Esperados
+## Conclusion
 
-Al finalizar el proyecto, se espera contar con un sistema funcional de recuperación de información que permita realizar búsquedas eficientes en el corpus Reuters-21578. La evaluación del sistema deberá mostrar una alta precisión y recall, indicando la efectividad del SRI.
-
-### Conclusión
-
-Este proyecto proporciona una oportunidad práctica para aplicar y mejorar habilidades en el procesamiento de lenguaje natural, la recuperación de información y el desarrollo de aplicaciones web. Además, contribuye al entendimiento y aplicación de técnicas avanzadas de manejo de grandes volúmenes de datos textuales.
+This project offers a practical opportunity to apply and enhance skills in natural language processing, information retrieval, and web application development. It also contributes to the understanding and application of advanced techniques for managing large textual datasets.
